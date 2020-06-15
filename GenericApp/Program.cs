@@ -17,7 +17,7 @@ namespace GenericApp
             valuse = new T[len];
             index = 0;
         }
-
+        
         public void Add(params T[] args)
         {
             foreach (T item in args)
