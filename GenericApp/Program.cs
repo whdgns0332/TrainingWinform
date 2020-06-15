@@ -35,6 +35,7 @@ namespace GenericApp
             Console.WriteLine();
         }
     }
+    // 주석
     class Program
     {
         static void Main(string[] args)
