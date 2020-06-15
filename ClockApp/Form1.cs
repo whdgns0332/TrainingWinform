@@ -41,11 +41,12 @@ namespace ClockApp
             }
 
         }
+
         /*
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            MessageBox.Show("활성화");
-        }
-        */
+private void Form1_Activated(object sender, EventArgs e)
+{
+   MessageBox.Show("활성화");
+}
+*/
     }
 }

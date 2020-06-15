@@ -23,15 +23,5 @@ namespace WinFormApp
             //MessageBox.Show($"Hello World! {now}");
             TxtCurrentDate.Text = now.ToString();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

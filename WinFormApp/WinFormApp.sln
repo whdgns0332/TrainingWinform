@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormApp", "WinFormApp.csproj", "{9B00948D-00D5-4F9F-8BDE-E3F937C5B265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockApp", "..\ClockApp\ClockApp.csproj", "{E51616ED-D515-4D76-8A8D-4509F2F57979}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonTestApp", "..\ButtonTestApp\ButtonTestApp.csproj", "{6D6B6801-53A1-4EDC-9893-1A6F2B6F0D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockApp", "..\ClockApp\ClockApp.csproj", "{72E7A02E-29EC-4E1F-81A4-EE973C7C1773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{9B00948D-00D5-4F9F-8BDE-E3F937C5B265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B00948D-00D5-4F9F-8BDE-E3F937C5B265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B00948D-00D5-4F9F-8BDE-E3F937C5B265}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E51616ED-D515-4D76-8A8D-4509F2F57979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E51616ED-D515-4D76-8A8D-4509F2F57979}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E51616ED-D515-4D76-8A8D-4509F2F57979}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E51616ED-D515-4D76-8A8D-4509F2F57979}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D6B6801-53A1-4EDC-9893-1A6F2B6F0D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D6B6801-53A1-4EDC-9893-1A6F2B6F0D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D6B6801-53A1-4EDC-9893-1A6F2B6F0D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D6B6801-53A1-4EDC-9893-1A6F2B6F0D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E7A02E-29EC-4E1F-81A4-EE973C7C1773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E7A02E-29EC-4E1F-81A4-EE973C7C1773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E7A02E-29EC-4E1F-81A4-EE973C7C1773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E7A02E-29EC-4E1F-81A4-EE973C7C1773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

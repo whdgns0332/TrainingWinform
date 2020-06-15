@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "현재시간";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // MainForm
             // 
@@ -72,7 +71,6 @@
             this.Controls.Add(this.BtnMessage);
             this.Name = "MainForm";
             this.Text = "MainWindow";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
