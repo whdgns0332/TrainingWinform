@@ -1,0 +1,11 @@
+C:\SRC\TrainingWinform\MainMenuApp\bin\Debug\MainMenuApp.exe.config
+C:\SRC\TrainingWinform\MainMenuApp\bin\Debug\MainMenuApp.exe
+C:\SRC\TrainingWinform\MainMenuApp\bin\Debug\MainMenuApp.pdb
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.Form1.resources
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.Properties.Resources.resources
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.csproj.GenerateResource.cache
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.csproj.CoreCompileInputs.cache
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.exe
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.pdb
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.csprojAssemblyReference.cache
+C:\SRC\TrainingWinform\MainMenuApp\obj\Debug\MainMenuApp.AboutBox1.resources

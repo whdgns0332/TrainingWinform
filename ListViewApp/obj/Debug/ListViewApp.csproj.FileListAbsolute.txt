@@ -1,0 +1,10 @@
+C:\SRC\TrainingWinform\ListViewApp\bin\Debug\ListViewApp.exe.config
+C:\SRC\TrainingWinform\ListViewApp\bin\Debug\ListViewApp.exe
+C:\SRC\TrainingWinform\ListViewApp\bin\Debug\ListViewApp.pdb
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.csprojAssemblyReference.cache
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.Form1.resources
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.Properties.Resources.resources
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.csproj.GenerateResource.cache
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.csproj.CoreCompileInputs.cache
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.exe
+C:\SRC\TrainingWinform\ListViewApp\obj\Debug\ListViewApp.pdb
