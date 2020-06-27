@@ -10,7 +10,6 @@ namespace BookRentalShop20
 {
     public partial class DivForm : MetroForm
     {
-        string strComString = "Data Source=192.168.0.27;Initial Catalog=BookRantalShopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
         string mode = "";
         public DivForm()
         {
@@ -24,7 +23,7 @@ namespace BookRentalShop20
 
         private void Updatedata()
         {
-            using (SqlConnection conn = new SqlConnection(strComString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open(); // DB 열기
                 string strQuery = "SELECT Division, Names FROM divtbl";
@@ -38,7 +37,7 @@ namespace BookRentalShop20
             }
         }
 
-        private void GrdDivTbl_CellClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
+        private void GrdDivTbl_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
             {
@@ -81,6 +80,7 @@ namespace BookRentalShop20
             TxtDivision.Text = TxtNames.Text = "";
             TxtDivision.ReadOnly = false;
             TxtDivision.BackColor = Color.White;
+            TxtDivision.Focus();
         }
 
         private void SaveProcess() // DB 저장 프로세스
@@ -91,7 +91,7 @@ namespace BookRentalShop20
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            using (SqlConnection conn = new SqlConnection(strComString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
@@ -144,7 +144,7 @@ namespace BookRentalShop20
 
         private void DeleteProcess()
         {
-            using (SqlConnection conn = new SqlConnection(strComString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();

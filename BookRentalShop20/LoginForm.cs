@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
@@ -21,6 +14,7 @@ namespace BookRentalShop20
         {
             InitializeComponent();
         }
+
         /// <summary>
         /// 캔슬 처리버튼 이벤트
         /// </summary>
@@ -31,6 +25,7 @@ namespace BookRentalShop20
             // Application.Exit();
             Environment.Exit(0); // 위와 같이 창닫기
         }
+
         /// <summary>
         /// 로그인 처리버튼 이벤트
         /// </summary>
@@ -60,8 +55,7 @@ namespace BookRentalShop20
         private void LoginProcess()
         {
             // throw new NotImplementedException();
-            if (String.IsNullOrEmpty(TxtUserID.Text) ||
-                String.IsNullOrEmpty(TxtPassword.Text))
+            if (string.IsNullOrEmpty(TxtUserID.Text) || string.IsNullOrEmpty(TxtPassword.Text))
             {
                 MetroMessageBox.Show(this, "아이디/패스워드를 입력하세요!", "오류",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -93,6 +87,7 @@ namespace BookRentalShop20
                     
                     if (strUserId != "")
                     {
+                        Commons.LOGINUSERID = strUserId;
                         MetroMessageBox.Show(this, "접속성공", "로그인 성공");
                         this.Close();
                     }
@@ -111,6 +106,7 @@ namespace BookRentalShop20
 
                 MetroMessageBox.Show(this, $"Error : {ex.StackTrace}", "오류",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
     }

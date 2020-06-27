@@ -10,7 +10,6 @@ namespace BookRentalShop20
 {
     public partial class UserForm : MetroForm
     {
-        string strComString = "Data Source=192.168.0.27;Initial Catalog=BookRantalShopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
         string mode = "";
         public UserForm()
         {
@@ -21,12 +20,13 @@ namespace BookRentalShop20
         {
             Updatedata(); // 데이터그리드 DB 데이터 로딩하기
         }
+
         /// <summary>
         /// 사용자 데이터 가져오기
         /// </summary>
         private void Updatedata()
         {
-            using (SqlConnection conn = new SqlConnection(strComString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open(); // DB 열기
                 string strQuery = "SELECT id ,userID ,password ,lastLoginDt ,loginIpAddr FROM dbo.userTbl";
@@ -36,7 +36,7 @@ namespace BookRentalShop20
                 dataAdapter.Fill(ds, "userTbl");
 
                 GrdUserTbl.DataSource = ds;
-                GrdUserTbl.DataMember = "divtbl";
+                GrdUserTbl.DataMember = "usertbl";
             }
 
             DataGridViewColumn column = GrdUserTbl.Columns[0];
@@ -61,7 +61,7 @@ namespace BookRentalShop20
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void GrdDivTbl_CellClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
+        private void GrdDivTbl_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
             {
@@ -70,17 +70,15 @@ namespace BookRentalShop20
                 TxtUserID.Text = data.Cells[1].Value.ToString();
                 TxtPassword.Text = data.Cells[2].Value.ToString();
 
-                mode = "UPDATE"; // 수정
+                mode = "UPDATE"; // 수정은 UPDATE
             }
         }
 
         private void BtnNew_Click(object sender, EventArgs e)
         {
-            TxtUserID.Text = TxtPassword.Text = "";
-            TxtUserID.ReadOnly = false;
-            TxtUserID.BackColor = Color.White;
+            ClearTextControls();
 
-            mode = "INSERT";
+            mode = "INSERT"; // 신규는 INSERT
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -103,17 +101,18 @@ namespace BookRentalShop20
             TxtId.Text = TxtUserID.Text = TxtPassword.Text = "";
             //TxtUserID.ReadOnly = false;
             //TxtUserID.BackColor = Color.White;
+            TxtUserID.Focus();
         }
 
         private void SaveProcess() // DB 저장 프로세스
         {
-            if (String.IsNullOrEmpty(mode))
+            if (string.IsNullOrEmpty(mode))
             {
                 MetroMessageBox.Show(this, "신규버튼을 누르고 데이터를 저장하십시오", "경고",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            using (SqlConnection conn = new SqlConnection(strComString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
@@ -164,11 +163,12 @@ namespace BookRentalShop20
 
             DeleteProcess();
             Updatedata();
+            ClearTextControls();
         }
 
         private void DeleteProcess()
         {
-            using (SqlConnection conn = new SqlConnection(strComString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();

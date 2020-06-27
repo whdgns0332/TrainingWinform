@@ -32,7 +32,7 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtUserID = new System.Windows.Forms.TextBox();
-            this.BtnOK = new System.Windows.Forms.Button();
+            this.BtnOk = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -75,15 +75,15 @@
             this.TxtUserID.TabIndex = 0;
             this.TxtUserID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textID_KeyPress);
             // 
-            // BtnOK
+            // BtnOk
             // 
-            this.BtnOK.Location = new System.Drawing.Point(136, 225);
-            this.BtnOK.Name = "BtnOK";
-            this.BtnOK.Size = new System.Drawing.Size(100, 37);
-            this.BtnOK.TabIndex = 2;
-            this.BtnOK.Text = "OK";
-            this.BtnOK.UseVisualStyleBackColor = true;
-            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
+            this.BtnOk.Location = new System.Drawing.Point(136, 225);
+            this.BtnOk.Name = "BtnOk";
+            this.BtnOk.Size = new System.Drawing.Size(100, 37);
+            this.BtnOk.TabIndex = 2;
+            this.BtnOk.Text = "OK";
+            this.BtnOk.UseVisualStyleBackColor = true;
+            this.BtnOk.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // BtnCancel
             // 
@@ -102,7 +102,7 @@
             this.ClientSize = new System.Drawing.Size(520, 340);
             this.ControlBox = false;
             this.Controls.Add(this.BtnCancel);
-            this.Controls.Add(this.BtnOK);
+            this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.TxtUserID);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.label2);
@@ -120,7 +120,7 @@
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtUserID;
-        private System.Windows.Forms.Button BtnOK;
+        private System.Windows.Forms.Button BtnOk;
         private System.Windows.Forms.Button BtnCancel;
     }
 }
